@@ -1,0 +1,28 @@
+記入例
+ex)
+カテゴリ
+    実施回
+        ファイル名
+
+
+# 幅優先探索
+ABC
+    ABC007
+        C.py
+OtherContest
+    第10回日本情報オリンピック予選
+        E.py
+    第11回日本情報オリンピック予選
+        E.py
+
+# 深さ優先探索
+
+ABC
+    ABC114
+        C.py
+    ABC161
+        D.py
+OtherContest
+    AtCoderTypicalContest001
+        A.py
+
