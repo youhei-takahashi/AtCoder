@@ -28,3 +28,8 @@ OtherContest
     AtCoderTypicalContest001
         A.py
 
+# DP
+OtherContest
+    AtCoderEductionalDPContest
+        A.py
+        B.py
