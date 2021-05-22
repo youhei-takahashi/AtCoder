@@ -22,6 +22,8 @@ ABC
         C.py
     ABC161
         D.py
+    ABC138
+        D.py
 OtherContest
     AtCoderTypicalContest001
         A.py
