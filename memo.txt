@@ -33,3 +33,8 @@ OtherContest
     AtCoderEductionalDPContest
         A.py
         B.py
+PAST
+    第3回アルゴリズム実技検定
+        H.py
+
+        
