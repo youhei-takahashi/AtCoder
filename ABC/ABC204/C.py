@@ -1,39 +1,33 @@
 import sys
 import time
-
-START_TIME = time.time()
+sys.setrecursionlimit(10000)
 
 N,M = map(int, input().split())
 
-ma = [] # 探索済み
+ma = [] # 探索済み配列
 for _ in range(N):
     ma.append([False] * N)
-for x in range(N):
-    ma[x][x] = True
-ans = N
+ans = 0     # 解答
 
-li = []
+li = [[] for i in range(N)]     # 道データ
 for x in range(M):
     x, y = map(int, input().split())
-    li.append([x-1,y-1])
+    li[x-1].append(y-1)
 
-if M == 0:
+if M == 0:  # 道が無かったら
     print(N)
     sys.exit()
 
-
-def dfs(i, x, y):
+def dfs(i, j):   # 第1引数：起点、第2引数：移動先
     global ans
-    if not(ma[i][y]):
-        ma[i][y] = True
+    if not(ma[i][j]):   # 既に移動済みでなければその先をさらに探索
+        ma[i][j] = True
         ans += 1
-        for j,k in li:
-            if j == y:
-                dfs(i, j, k)
+        for k in li[j]:
+            dfs(i, k)
 
-for i, j in li:
-    dfs(i, i, j)
+for i in range(N):
+    dfs(i, i)
 print(ans)
 
-ELAPSED_TIME = time.time() - START_TIME
-print('Elapsed Time:', ELAPSED_TIME*1000 ,'[ms]')
+
