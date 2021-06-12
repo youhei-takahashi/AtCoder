@@ -5,7 +5,7 @@ ex)
         ファイル名
 
 
-# 幅優先探索
+# 幅優先探索(BFS)
 ABC
     ABC007
         C.py
@@ -15,7 +15,7 @@ OtherContest
     第11回日本情報オリンピック予選
         E.py
 
-# 深さ優先探索
+# 深さ優先探索(DFS)
 
 ABC
     ABC114
@@ -24,6 +24,8 @@ ABC
         D.py
     ABC138
         D.py
+    ABC204
+        C.py
 OtherContest
     AtCoderTypicalContest001
         A.py
@@ -37,4 +39,3 @@ PAST
     第3回アルゴリズム実技検定
         H.py
 
-        
