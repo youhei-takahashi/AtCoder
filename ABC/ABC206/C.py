@@ -1,3 +1,4 @@
+import collections
 # listだとTLEだったが、dictでACになった。
 
 N = int(input())
@@ -12,10 +13,17 @@ for i in A:
     else:
         x[i] = 1
 
+# 上記のループの処理は下記のライブラリで一発でできる。
+# x = collections.Counter(A)
+
+
 sum = 0
 for z in x:
     sum += x[z] * (N - x[z])
 print(sum//2)
+
+
+
 
 # x = []
 # y = []
